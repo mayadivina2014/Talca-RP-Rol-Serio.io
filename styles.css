@@ -1,7 +1,7 @@
 /* Fondo degradado de una sola pieza */
 body {
-    background: linear-gradient(to bottom, white, #ff0000, #0000ff); /* Degradado de blanco a rojo y azul */
-    color: black;
+    background: linear-gradient(to bottom, #000000, #1E3A8A, #7C3AED); /* Degradado de negro, azul y morado */
+    color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -56,7 +56,7 @@ header .header-text h1 {
     margin: 0 auto;
 }
 
-/* Botones: fondo negro con texto y borde blancos */
+/* Botones: fondo negro con texto y borde morado */
 .botones {
     text-align: center;
     margin-top: 20px;
@@ -70,14 +70,14 @@ header .header-text h1 {
     color: white; /* Texto blanco */
     text-decoration: none;
     border-radius: 5px;
-    border: 2px solid white; /* Borde blanco */
+    border: 2px solid #7C3AED; /* Borde morado */
     transition: all 0.3s ease;
 }
 
 .botones a:hover {
-    background: white; /* Fondo blanco al hacer hover */
-    color: black; /* Texto negro al hacer hover */
-    border: 2px solid black; /* Borde negro al hacer hover */
+    background: #7C3AED; /* Fondo morado al hacer hover */
+    color: white; /* Texto blanco al hacer hover */
+    border: 2px solid #1E3A8A; /* Borde azul al hacer hover */
 }
 
 /* Pie de página */
@@ -117,13 +117,13 @@ footer .version {
 }
 
 .normas-box::-webkit-scrollbar-thumb {
-    background-color: #ff0000; /* Barra de desplazamiento roja */
+    background-color: #7C3AED; /* Barra de desplazamiento morada */
     border-radius: 10px;
 }
 
 /* Títulos de las normas */
 .normas-box h2, .normas-box h3 {
-    color: #ff0000; /* Rojo para los títulos */
+    color: #7C3AED; /* Morado para los títulos */
     font-size: 1.6em;
     margin-bottom: 15px;
 }
@@ -141,7 +141,7 @@ footer .version {
 }
 
 .normas-box ul li strong {
-    color: #ff0000; /* Resaltar los títulos dentro de la lista */
+    color: #1E3A8A; /* Resaltar los títulos dentro de la lista en azul */
 }
 
 /* Para los enlaces y botones de normas si los tienes */
@@ -159,5 +159,5 @@ footer .version {
 .botones a:hover {
     background: white;
     color: black;
-    border: 2px solid #ff0000;
+    border: 2px solid #7C3AED;
 }
