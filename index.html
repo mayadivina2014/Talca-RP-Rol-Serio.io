@@ -33,16 +33,13 @@
 </div>
 
     <!-- Versión del sitio -->
-  <footer>
-    <p class="version">Versión: <span id="version"></span></p>
+ <footer>
+    <p class="version">Versión: <span id="version">Cargando...</span></p>
 </footer>
 
+<script src="version.js"></script>
 <script>
-    // Cargar la versión desde version.json
-    fetch("version.json")
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("version").textContent = data.version;
-        })
-        .catch(error => console.error("Error al cargar la versión:", error));
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("version").textContent = version;
+    });
 </script>
