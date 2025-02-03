@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chilenos Street RP</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <title>Trabajos de Tiempo Parcial</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,34 +11,32 @@
     <header class="header">
         <img src="images/logo.png" alt="Logo Chilenos Street RP" class="logo">
         <div class="header-text">
-            <h1>Talca Chile Roleplay | Rol Estricto ER:LC</h1>
-            <p>Bienvenidos a la página oficial del servidor Talca Chile Roleplay | Rol Estricto ER:LC.</p>
+            <h1>Trabajos de Tiempo Parcial</h1>
+            <p>Aquí puedes encontrar servidores de Discord que ofrecen trabajos de tiempo parcial dentro del rol.</p>
         </div>
     </header>
 
-    <!-- Banner principal -->
-    <div class="banner">
-        <img src="images/banner.gif" alt="Normativa General">
+    <!-- Sección de trabajos disponibles -->
+    <div class="trabajos">
+        <h2>Servidores Disponibles</h2>
+        <ul>
+            <li><a href="https://discord.gg/94nvTxKPX" target="_blank">Joyería | Talca RP</a></li>
+            <li><a href="https://discord.gg/Z8HKysUG" target="_blank">Ruta Sur</a></li>
+            <li><a href="https://discord.gg/KtCVqU9hur" target="_blank">Auto Planet</a></li>
+            <li><a href="https://discord.gg/nqjuJpCB" target="_blank">Starbucks</a></li>
+        </ul>
     </div>
 
-    <!-- Enlaces a los servidores -->
-    <div class="botones">
-        <a href="https://discord.gg/H5gBGfWepq" target="_blank">Servidor PDI</a>
-        <a href="https://discord.gg/C8NtQhB2" target="_blank">Servidor Carabineros</a>
-        <a href="https://discord.gg/NRK7atVV" target="_blank">Servidor de Bomberos</a>
-        <a href="normas.html">Normativa General</a>
-        <a href="trabajos.html">Trabajos de Tiempo Parcial</a> <!-- Nuevo botón -->
-    </div>
-
-    <!-- Versión del sitio -->
+    <!-- Pie de página con versión y enlace de regreso -->
     <footer>
         <p class="version">Versión: <span id="version">Cargando...</span></p>
+        <a href="index.html">Volver al inicio</a>
     </footer>
 
+    <!-- Script para cargar la versión desde el archivo version.js -->
     <script src="version.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Aquí cambiamos el texto del span con id "version"
             document.getElementById("version").innerText = version;
         });
     </script>
