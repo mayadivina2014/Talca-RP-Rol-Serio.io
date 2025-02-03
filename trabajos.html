@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chilenos Street RP | Trabajos</title>
+    <title>Chilenos Street RP</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="styles.css">
@@ -25,10 +25,11 @@
 
     <!-- Enlaces a los servidores -->
     <div class="botones">
-        <a href="https://discord.gg/94nvTxKPX" target="_blank">Joyeria | Talca RP</a>
-        <a href="https://discord.gg/Z8HKysUG" target="_blank">Ruta Sur</a>
-        <a href="https://discord.gg/KtCVqU9hur" target="_blank">Auto Planet</a>
-        <a href="https://discord.gg/nqjuJpCB" target="_blank">Starbucks</a>
+        <a href="https://discord.gg/H5gBGfWepq" target="_blank">Servidor PDI</a>
+        <a href="https://discord.gg/C8NtQhB2" target="_blank">Servidor Carabineros</a>
+        <a href="https://discord.gg/NRK7atVV" target="_blank">Servidor de Bomberos</a>
+        <a href="normas.html">Normativa General</a>
+        <a href="trabajos.html">Trabajos de Tiempo Parcial</a> <!-- Nuevo botón -->
     </div>
 
     <!-- Versión del sitio -->
@@ -36,18 +37,11 @@
         <p class="version">Versión: <span id="version">Cargando...</span></p>
     </footer>
 
-    <!-- Cargar el script de la versión -->
     <script src="version.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Verificar el valor de la variable 'version'
-            console.log("Valor de version:", version);  // Muestra en consola el valor de 'version'
-
-            // Asignar el valor de 'version' al <span> con id="version"
-            var versionElement = document.getElementById("version");
-            versionElement.innerText = version;  // Asigna la versión al texto del <span>
-            
-            console.log("Elemento version actualizado:", versionElement.innerText);  // Verifica el texto actualizado
+            // Aquí cambiamos el texto del span con id "version"
+            document.getElementById("version").innerText = version;
         });
     </script>
 </body>
