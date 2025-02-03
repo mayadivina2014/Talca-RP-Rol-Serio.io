@@ -3,34 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajos de Tiempo Parcial</title>
+    <title>Chilenos Street RP | Trabajos</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Encabezado con logo -->
     <header class="header">
         <img src="images/logo.png" alt="Logo Chilenos Street RP" class="logo">
         <div class="header-text">
-            <h1>Trabajos de Tiempo Parcial</h1>
-            <p>Aquí puedes encontrar servidores de Discord que ofrecen trabajos de tiempo parcial dentro del rol.</p>
+            <h1>Talca Chile Roleplay | Rol Estricto ER:LC</h1>
+            <p>Bienvenidos a la página oficial del servidor Talca Chile Roleplay | Rol Estricto ER:LC.</p>
         </div>
     </header>
 
-    <div class="trabajos">
-        <h2>Servidores Disponibles</h2>
-        <ul>
-            <li><a href="https://discord.gg/94nvTxKPX" target="_blank">Joyería | Talca RP</a></li>
-            <li><a href="https://discord.gg/Z8HKysUG" target="_blank">Ruta Sur</a></li>
-            <li><a href="https://discord.gg/KtCVqU9hur" target="_blank">Auto Planet</a></li>
-            <li><a href="https://discord.gg/nqjuJpCB" target="_blank">Starbucks</a></li>
-        </ul>
+    <!-- Banner principal -->
+    <div class="banner">
+        <img src="images/banner.gif" alt="Normativa General">
     </div>
-<footer>
-    <p class="version">Versión: <span id="version">Cargando...</span></p>
-</footer>
 
-<script src="version.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("version").innerText = version;
-    });
-</script>
+    <!-- Enlaces a los servidores -->
+    <div class="botones">
+        <a href="https://discord.gg/94nvTxKPX" target="_blank">Joyeria | Talca RP</a>
+        <a href="https://discord.gg/Z8HKysUG" target="_blank">Ruta Sur</a>
+        <a href="https://discord.gg/KtCVqU9hur" target="_blank">Auto Planet</a>
+        <a href="https://discord.gg/nqjuJpCB" target="_blank">Starbucks</a>
+    </div>
+
+    <!-- Versión del sitio -->
+    <footer>
+        <p class="version">Versión: <span id="version">Cargando...</span></p>
+    </footer>
+
+    <!-- Cargar el script de la versión -->
+    <script src="version.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Asignar el valor de la versión al <span> con id="version"
+            document.getElementById("version").innerText = version;
+        });
+    </script>
+</body>
+</html>
