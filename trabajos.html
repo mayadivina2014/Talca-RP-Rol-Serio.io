@@ -25,9 +25,16 @@
         </ul>
     </div>
 
-    <footer>
-        <p class="version">Versión: V.2.2.1</p>
-        <a href="index.html">Volver al inicio</a>
-    </footer>
-</body>
-</html>
+<footer>
+    <p class="version">Versión: <span id="version"></span></p>
+</footer>
+
+<script>
+    // Cargar la versión desde version.json
+    fetch("version.json")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("version").textContent = data.version;
+        })
+        .catch(error => console.error("Error al cargar la versión:", error));
+</script>
