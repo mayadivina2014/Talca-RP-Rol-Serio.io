@@ -33,15 +33,10 @@
     <!-- Cargar el archivo de la versión -->
     <script src="version.js"></script>
     <script>
-        // Esperamos a que el contenido de la página se haya cargado
         document.addEventListener("DOMContentLoaded", function () {
-            // Comprobamos si la variable `version` está definida
             if (typeof version !== 'undefined') {
-                // Inyectamos la versión en el elemento con id 'version'
                 document.getElementById("version").innerText = version;
             } else {
-                // Si no está definida, mostramos un mensaje de error
-                console.error("No se pudo encontrar la variable 'version'");
                 document.getElementById("version").innerText = "Error al cargar versión";
             }
         });
