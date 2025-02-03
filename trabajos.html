@@ -34,8 +34,9 @@
     <script src="version.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            // Asegúrate de que el archivo version.js se haya cargado correctamente
             if (typeof version !== 'undefined') {
-                document.getElementById("version").innerText = version;
+                document.getElementById("version").innerText = version; // Mostrar el valor de la variable version
             } else {
                 document.getElementById("version").innerText = "Error al cargar versión";
             }
