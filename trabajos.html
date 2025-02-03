@@ -25,7 +25,6 @@
         </ul>
     </div>
 
-    <!-- Footer donde mostrarás la versión -->
     <footer>
         <p class="version">Versión: <span id="version">Cargando...</span></p>
         <a href="index.html">Volver al inicio</a>
@@ -34,10 +33,17 @@
     <!-- Cargar el archivo de la versión -->
     <script src="version.js"></script>
     <script>
-        // Asegurarse de que la página ha cargado antes de ejecutar el script
+        // Esperamos a que el contenido de la página se haya cargado
         document.addEventListener("DOMContentLoaded", function () {
-            // Establecer el texto de la versión usando la variable 'version' de version.js
-            document.getElementById("version").innerText = version;
+            // Comprobamos si la variable `version` está definida
+            if (typeof version !== 'undefined') {
+                // Inyectamos la versión en el elemento con id 'version'
+                document.getElementById("version").innerText = version;
+            } else {
+                // Si no está definida, mostramos un mensaje de error
+                console.error("No se pudo encontrar la variable 'version'");
+                document.getElementById("version").innerText = "Error al cargar versión";
+            }
         });
     </script>
 </body>
