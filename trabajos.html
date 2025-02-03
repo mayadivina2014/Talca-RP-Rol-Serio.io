@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Encabezado con logo -->
     <header class="header">
         <img src="images/logo.png" alt="Logo Chilenos Street RP" class="logo">
         <div class="header-text">
@@ -16,7 +15,6 @@
         </div>
     </header>
 
-    <!-- Sección de trabajos disponibles -->
     <div class="trabajos">
         <h2>Servidores Disponibles</h2>
         <ul>
@@ -27,16 +25,18 @@
         </ul>
     </div>
 
-    <!-- Pie de página con versión y enlace de regreso -->
+    <!-- Footer donde mostrarás la versión -->
     <footer>
         <p class="version">Versión: <span id="version">Cargando...</span></p>
         <a href="index.html">Volver al inicio</a>
     </footer>
 
-    <!-- Script para cargar la versión desde el archivo version.js -->
+    <!-- Cargar el archivo de la versión -->
     <script src="version.js"></script>
     <script>
+        // Asegurarse de que la página ha cargado antes de ejecutar el script
         document.addEventListener("DOMContentLoaded", function () {
+            // Establecer el texto de la versión usando la variable 'version' de version.js
             document.getElementById("version").innerText = version;
         });
     </script>
